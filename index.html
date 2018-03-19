@@ -1,0 +1,209 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>CvJulien</title><base href="https://mbillon.github.io/CVJulienTHIREAU/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><script src="https://www.amcharts.com/lib/3/ammap.js"></script><script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script><script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script><link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/><script src="https://www.amcharts.com/lib/3/themes/light.js"></script><script>/**
+ * SVG path for target icon
+ */
+ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+  /**
+  * Create the map
+  */
+ var map = AmCharts.makeChart( "chartdiv", {
+   "type": "map",
+   "theme": "light",
+   "dataProvider": {
+     "map": "worldLow",
+     "linkToObject": "nantes",
+     "images": [ {
+         "id": "nantes",
+         "color": "#000000",
+         "svgPath": targetSVG,
+         "title": "Nantes",
+         "latitude": 47.218371,
+         "longitude": -1.553621,
+         "scale": 1.5,
+         "zoomLevel": 2.20,
+         "zoomLongitude": 0.1341,
+         "zoomLatitude": 20.1712,
+ 
+         "lines": [ {
+           "latitudes": [ 47.218371, 48.856614 ],
+           "longitudes": [ -1.553621, 2.352219 ]
+         }, {
+           "latitudes": [ 47.218371, -18.766947 ],
+           "longitudes": [ -1.553621, 46.8691069 ]
+         }, {
+           "latitudes": [47.218371, 7.53998899 ],
+           "longitudes": [ -1.553621, -5.547080 ]
+         }, {
+           "latitudes": [ 47.218371, 14.641528 ],
+           "longitudes": [-1.553621, -61.0241740 ]
+         }, {
+           "latitudes": [ 47.218371, 16.265 ],
+           "longitudes": [ -1.553621, -61.0999 ]
+         }, {
+           "latitudes": [ 47.218371, 9.30769 ],
+           "longitudes": [ -1.553621, 2.31583399 ]
+         }, {
+           "latitudes": [ 47.218371, 17.607789 ],
+           "longitudes": [ -1.553621, 8.081666 ]
+         }, {
+           "latitudes": [ 47.218371, 12.238333 ],
+           "longitudes": [ -1.553621, -1.561593 ]
+         }, {
+           "latitudes": [ 47.218371, -20.904305 ],
+           "longitudes": [ -1.553621, 165.6180420 ]
+         }, {
+           "latitudes": [ 47.218371, 40.4167754 ],
+           "longitudes": [ -1.553621, -3.703790199 ]
+         }, {
+           "latitudes": [ 47.218371, 31.791702 ],
+           "longitudes": [ -1.553621, -7.0926200 ]
+         }, {
+           "latitudes": [ 47.218371, 33.886917 ],
+           "longitudes": [ -1.553621, 9.53749900 ]
+         } , {
+           "latitudes": [ 47.218371, 50.503887 ],
+           "longitudes": [ -1.553621,4.46993599 ]
+         } , {
+           "latitudes": [ 47.218371, 46.818188 ],
+           "longitudes": [ -1.553621, 8.2275199 ]
+         } , {
+           "latitudes": [ 47.218371, 14.497401 ],
+           "longitudes": [ -1.553621, -14.4536199 ]
+         } , {
+           "latitudes": [ 47.218371, 15.454166 ],
+           "longitudes": [ -1.553621, 18.732207 ]
+         } , {
+           "latitudes": [ 47.218371, 8.61954300 ],
+           "longitudes": [ -1.553621, 0.82478200 ]
+         } , {
+           "latitudes": [ 47.218371, 9.94558699 ],
+           "longitudes": [ -1.553621, -9.69664499 ]
+         } , {
+           "latitudes": [ 47.218371, 3.93388899 ],
+           "longitudes": [ -1.553621, -53.12578200 ]
+         } ]
+ 
+        
+       },
+ 
+       {
+         "svgPath": targetSVG,
+         "title": "Paris",
+         "latitude": 48.856614,
+         "longitude": 2.352219
+       }, {
+         "svgPath": targetSVG,
+         "title": "Madagascar",
+         "latitude": -18.766947,
+         "longitude": 46.8691069
+       }, {
+         "svgPath": targetSVG,
+         "title": "Côte d'Ivoire",
+         "latitude": 7.53998899,
+         "longitude": -5.547080
+       }, {
+         "svgPath": targetSVG,
+         "title": "Martinique",
+         "latitude": 14.641528,
+         "longitude": -61.0241740
+       }, {
+         "svgPath": targetSVG,
+         "title": "Guadeloupe",
+         "latitude": 16.265,
+         "longitude": -61.550999
+       }, {
+         "svgPath": targetSVG,
+         "title": "Bénin",
+         "latitude": 9.30769,
+         "longitude": 2.31583399
+       }, {
+         "svgPath": targetSVG,
+         "title": "Niger",
+         "latitude": 17.607789,
+         "longitude": 8.08166600
+       }, {
+         "svgPath": targetSVG,
+         "title": "Burkina Faso",
+         "latitude": 12.238333,
+         "longitude": -1.56159300
+       }, {
+         "svgPath": targetSVG,
+         "title": "Nouvelle Calédonie",
+         "latitude": -20.904305,
+         "longitude": 165.6180420
+       }, {
+         "svgPath": targetSVG,
+         "title": "Madrid",
+         "latitude": 40.4167754,
+         "longitude": -3.703790199
+       }, {
+         "svgPath": targetSVG,
+         "title": "Maroc",
+         "latitude": 31.791702,
+         "longitude": -7.0926200
+       }, {
+         "svgPath": targetSVG,
+         "title": "Tunisie",
+         "latitude": 33.886917,
+         "longitude": 9.53749900
+       }, {
+         "svgPath": targetSVG,
+         "title": "Belgique",
+         "latitude": 50.503887,
+         "longitude": 4.46993599
+       }, {
+         "svgPath": targetSVG,
+         "title": "Suisse",
+         "latitude": 46.818188,
+         "longitude": 8.22751199
+       }, {
+         "svgPath": targetSVG,
+         "title": "Sénégal",
+         "latitude": 14.497401,
+         "longitude": -14.4536199
+       }, {
+         "svgPath": targetSVG,
+         "title": "Tchad",
+         "latitude": 15.454166,
+         "longitude": 18.732207
+       }, {
+         "svgPath": targetSVG,
+         "title": "Togo",
+         "latitude": 8.61954300,
+         "longitude": 0.82478200
+       }, {
+         "svgPath": targetSVG,
+         "title": "Guinée",
+         "latitude": 9.94558699,
+         "longitude": -9.69664499
+       }, {
+         "svgPath": targetSVG,
+         "title": "Guyane Française",
+         "latitude": 3.93388899,
+         "longitude": -53.12578200
+       }
+     ]
+   },
+ 
+   "areasSettings": {
+     "unlistedAreasColor": "#00C6BF"
+   },
+ 
+   "imagesSettings": {
+     "color": "#00456A",
+     "rollOverColor": "#051937",
+     "selectedColor": "#051937"
+   },
+ 
+   "linesSettings": {
+     "color": "#00456A",
+     "alpha": 0.3
+   },
+ 
+   "balloon": {
+     "drop": true
+   },
+ 
+   "backgroundZoomsToTop": true,
+   "linesAboveImages": true,
+ 
+ } );</script><link href="styles.93636f891ecf8369141d.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.46e0114bca524d0fb311.bundle.js"></script><script type="text/javascript" src="polyfills.f20484b2fa4642e0dca8.bundle.js"></script><script type="text/javascript" src="scripts.968f55bfb751cd0febb2.bundle.js"></script><script type="text/javascript" src="main.d50268ae32252e06b525.bundle.js"></script></body></html>
